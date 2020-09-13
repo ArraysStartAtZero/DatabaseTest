@@ -1,0 +1,8 @@
+/* here we style the content between header and footer */
+
+
+/* SVG PATH */
+.background_shape {
+    position: absolute;
+    z-index: -1;
+}
