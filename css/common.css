@@ -1,0 +1,39 @@
+/* here goes all the css shared by the pages */
+/* e. g. header and footer */
+/* our fonts should also go here */
+/* remember to start coding for the mobile version and branch out from there */
+/* gotta add media queries for super large screens and to center content if time left */
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* LOGO AND NAVIGATION AKA HEADER */
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    padding: 10px 14px;
+    width: 100px;
+    text-align: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
