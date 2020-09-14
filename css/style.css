@@ -12,36 +12,10 @@ body {
 }
 
 
-.background_shape svg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    width: 100%;
-    height: auto;
-    max-width: 55%;
-}
-
 
 /*HEADER*/
-.line {
-    border-bottom: white 3.5px solid;
-    z-index: 2;
-}
 
-.logo {
-    z-index: 2;
-}
 
-.name {
-    z-index: 2;
-}
-
-.manage {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
 /*TEXT STYLING*/
 
@@ -60,8 +34,91 @@ p {
 
 }
 
-/*Media Queries*/
+/* MEDIA QUERIES */
 
-@media only screen and (max-width: 500px) {
+@media only screen and (min-width: 960px) {
+    /* LOGO AND NAVIGATION AKA HEADER */
 
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    .background_shape svg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        max-width: 100%;
+        height: auto;
+        max-width: 55%;
+        z-index: 1;
+    }
+
+
+    .line {
+        position: relative;
+    }
+
+    .line::before {
+        border-bottom: white 3.5px solid;
+        z-index: 3;
+        display: block;
+        position: absolute;
+        content: '';
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+
+    .logo,
+    .name {
+        z-index: 4;
+    }
+
+    .logo {
+        max-height: 120px;
+    }
+
+    .logo img {
+        max-width: 160px;
+        position: relative;
+        top: 3vh;
+    }
+
+    .name img {
+        max-height: 80px;
+    }
+
+    nav {
+        padding: 20px;
+        z-index: 5;
+    }
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+    }
+
+    nav ul li {
+        padding: 10px 1px;
+        width: 100px;
+        text-align: center;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-family: 'Lato', sans-serif;
+        font-weight: 600;
+        font-size: 15px;
+    }
+
+
+    .logo_left {
+        display: flex;
+        align-items: flex-end
+    }
 }

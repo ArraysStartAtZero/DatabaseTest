@@ -16,47 +16,6 @@ img {
 }
 
 
-/* LOGO AND NAVIGATION AKA HEADER */
-
-header {
-    display: flex;
-    justify-content: space-between;
-     align-items: center;
-}
-.line {
-    border-bottom: white 3.5px solid;
-    z-index: 2;
-}
-
-.logo img {
-    max-width: 250px;
-    z-index: 2;
-}
-
-.name img {
-    max-height: 80px;
-    z-index: 2;
-}
-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-}
-
-nav ul li {
-    padding: 10px 1px;
-    width: 100px;
-    text-align: center;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-family: 'Lato', sans-serif;
-    font-weight: 600;
-    font-size: 15px;
-}
-
 /*Footer*/
 
 footer {
