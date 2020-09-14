@@ -17,3 +17,25 @@ body {
     z-index: -1;
 }
 
+/*TEXT STYLING*/
+
+h1 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    color: white;
+    padding: 10px;
+
+}
+
+/*Media Queries*/
+
+@media only screen and (max-width: 500px) {
+
+}
