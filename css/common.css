@@ -1,6 +1,7 @@
 /* here goes all the css shared by the pages */
 /* e. g. header and footer */
 /* our fonts should also go here */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 /* remember to start coding for the mobile version and branch out from there */
 /* gotta add media queries for super large screens and to center content if time left */
 
