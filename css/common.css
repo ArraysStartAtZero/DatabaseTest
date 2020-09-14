@@ -2,6 +2,10 @@
 /* e. g. header and footer */
 /* our fonts should also go here */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@700&display=swap');
 /* remember to start coding for the mobile version and branch out from there */
 /* gotta add media queries for super large screens and to center content if time left */
 
@@ -15,15 +19,37 @@ img {
     height: auto;
 }
 
+:root {
+    --primary-font: 'Montserrat', sans-serif;
+    --secondary-font: 'Syne', sans-serif;
+    --third-font: 'Poppins', sans-serif;
+    --text-color: #fff;
+}
+
 
 /*Footer*/
 
 footer {
-    font-family: 'Oswald', sans-serif;
     color: white;
-    text-align: center;
-    height: 6vh;
-    padding: 10px;
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p {
+    padding: 0;
+}
+
+.socials a {
+    margin: 0 15px;
+    color: white;
+}
+
+.socials i {
+    font-size: 20px;
 }
 
 /*Media Queries*/

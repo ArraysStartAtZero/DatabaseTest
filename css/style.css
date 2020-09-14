@@ -1,33 +1,65 @@
 /* here we style the content between header and footer */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 /* SVG PATH */
 body {
-    background-image: linear-gradient(#02151C, #556267);
+    background: rgb(2, 21, 28);
+    background: linear-gradient(180deg, rgba(2, 21, 28, 1) 0%, rgba(85, 98, 103, 1) 50%, rgba(2, 21, 28, 1) 100%);
     background-repeat: no-repeat;
     background-size: contain;
-    height: 100vh;
+    height: auto;
     width: 100%;
 }
 
-
-
 /*HEADER*/
 
+.background_shape svg,
+.logo,
+.name {
+    display: none;
+}
+
+header {
+    text-align: center;
+}
+
+.mobile_logo img {
+    max-width: 30%;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    padding: 10px 14px;
+    text-align: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: var(--primary-font);
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
 
 
 /*TEXT STYLING*/
 
 h1 {
-    font-family: 'Lato', sans-serif;
+    font-family: var(--third-font);
     font-weight: 600;
     color: white;
     text-align: center;
+    text-transform: uppercase;
 }
 
 p {
-    font-family: 'Lato', sans-serif;
+    font-family: var(--third-font);
     font-weight: 300;
     color: white;
     padding: 10px;
@@ -36,7 +68,7 @@ p {
 
 /* MEDIA QUERIES */
 
-@media only screen and (min-width: 960px) {
+@media only screen and (min-width: 920px) {
     /* LOGO AND NAVIGATION AKA HEADER */
 
     header {
@@ -51,8 +83,9 @@ p {
         left: 0;
         max-width: 100%;
         height: auto;
-        max-width: 55%;
+        max-height: 70%;
         z-index: 1;
+        display: block;
     }
 
 
@@ -75,6 +108,7 @@ p {
     .logo,
     .name {
         z-index: 4;
+        display: block;
     }
 
     .logo {
@@ -87,6 +121,7 @@ p {
         top: 3vh;
     }
 
+
     .name img {
         max-height: 80px;
     }
@@ -96,29 +131,13 @@ p {
         z-index: 5;
     }
 
-    nav ul {
-        list-style: none;
-        padding: 0;
-        display: flex;
-    }
-
-    nav ul li {
-        padding: 10px 1px;
-        width: 100px;
-        text-align: center;
-    }
-
-    nav ul li a {
-        text-decoration: none;
-        color: white;
-        font-family: 'Lato', sans-serif;
-        font-weight: 600;
-        font-size: 15px;
-    }
-
 
     .logo_left {
         display: flex;
-        align-items: flex-end
+        align-items: flex-end;
+    }
+
+    .mobile_logo {
+        display: none;
     }
 }
