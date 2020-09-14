@@ -12,9 +12,35 @@ body {
 }
 
 
-.background_shape {
+.background_shape svg {
     position: absolute;
-    z-index: -1;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: auto;
+    max-width: 55%;
+}
+
+
+/*HEADER*/
+.line {
+    border-bottom: white 3.5px solid;
+    z-index: 2;
+}
+
+.logo {
+    z-index: 2;
+}
+
+.name {
+    z-index: 2;
+}
+
+.manage {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /*TEXT STYLING*/
