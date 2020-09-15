@@ -26,6 +26,41 @@ img {
     --text-color: #fff;
 }
 
+/* HEADER */
+
+header {
+    text-align: center;
+}
+
+.name {
+    z-index: 5;
+}
+
+nav {
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    padding: 10px 14px;
+    text-align: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: var(--primary-font);
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
 
 /*Footer*/
 
@@ -33,10 +68,10 @@ footer {
     color: white;
     padding: 20px;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 900;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-top: white solid 2px;
 }
 
 footer p {
@@ -57,5 +92,39 @@ footer p {
 @media only screen and (max-width: 800px) {
     .logo img {
         max-width: auto;
+    }
+}
+
+@media only screen and (min-width: 920px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    .name,
+    .logo_left {
+        z-index: 5;
+    }
+
+    nav {
+        padding: 0 20px;
+        z-index: 5;
+    }
+
+    .line {
+        position: relative;
+    }
+
+    .line::before {
+        border-bottom: white 3.5px solid;
+        z-index: 3;
+        display: block;
+        position: absolute;
+        content: '';
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
     }
 }

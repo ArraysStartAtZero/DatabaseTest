@@ -3,6 +3,18 @@
     margin: 0;
 }
 
+<<<<<<< HEAD
+=======
+.name img {
+    max-height: 80px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+}
+
+>>>>>>> origin/master
 /* media queries */
 @media only screen and (min-width: 254px) {
     main {
@@ -72,11 +84,15 @@ h2 {
     justify-content: center;
     margin-bottom: 2%;
 }
+<<<<<<< HEAD
 .best_sellers img {
     border-radius: 10%;
 }
 
 /*
+=======
+
+>>>>>>> origin/master
 .item1 {
     font-family: syncopate, sans-serif;
     font-size: 1.3rem;
