@@ -6,3 +6,40 @@
         grid-template-rows: auto;
     }
 }
+
+
+
+
+body {
+    background: grey;
+}
+.item {
+/*    background-color: #9B4F0F;*/
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    padding: 1rem 2rem;
+    margin: 2rem 5rem;
+/*    box-shadow: 9px 7px;*/
+}
+.item h2 {
+    font-family: syncopate, sans-serif;
+    font-size: 1.3rem;
+    margin: 2rem;
+}
+img {
+    display: block;
+    width: 80%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.item h3 {
+    font-family: syne, sans-serif;
+}
+.item h3 span {
+    font-size: 1.7rem;
+}
+
+
