@@ -32,6 +32,10 @@ header {
     text-align: center;
 }
 
+.name {
+    z-index: 5;
+}
+
 nav {
     justify-content: center;
     margin-bottom: 10px;
@@ -97,8 +101,14 @@ footer p {
         align-items: flex-end;
     }
 
+    .name,
+    .logo_left {
+        z-index: 5;
+    }
+
     nav {
         padding: 0 20px;
+        z-index: 5;
     }
 
     .line {
