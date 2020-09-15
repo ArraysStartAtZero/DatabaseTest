@@ -1,8 +1,143 @@
 /* here we style the content between header and footer */
 
-
 /* SVG PATH */
-.background_shape {
-    position: absolute;
-    z-index: -1;
+body {
+    background: rgb(2, 21, 28);
+    background: linear-gradient(180deg, rgba(2, 21, 28, 1) 0%, rgba(85, 98, 103, 1) 50%, rgba(2, 21, 28, 1) 100%);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: auto;
+    width: 100%;
+}
+
+/*HEADER*/
+
+.background_shape svg,
+.logo,
+.name {
+    display: none;
+}
+
+header {
+    text-align: center;
+}
+
+.mobile_logo img {
+    max-width: 30%;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    padding: 10px 14px;
+    text-align: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: var(--primary-font);
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+
+/*TEXT STYLING*/
+
+h1 {
+    font-family: var(--third-font);
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+p {
+    font-family: var(--third-font);
+    font-weight: 300;
+    color: white;
+    padding: 10px;
+
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (min-width: 920px) {
+    /* LOGO AND NAVIGATION AKA HEADER */
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    .background_shape svg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        max-width: 100%;
+        height: auto;
+        max-height: 70%;
+        z-index: 1;
+        display: block;
+    }
+
+
+    .line {
+        position: relative;
+    }
+
+    .line::before {
+        border-bottom: white 3.5px solid;
+        z-index: 3;
+        display: block;
+        position: absolute;
+        content: '';
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+
+    .logo,
+    .name {
+        z-index: 4;
+        display: block;
+    }
+
+    .logo {
+        max-height: 120px;
+    }
+
+    .logo img {
+        max-width: 160px;
+        position: relative;
+        top: 3vh;
+    }
+
+
+    .name img {
+        max-height: 80px;
+    }
+
+    nav {
+        padding: 20px;
+        z-index: 5;
+    }
+
+
+    .logo_left {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .mobile_logo {
+        display: none;
+    }
 }
