@@ -18,33 +18,8 @@ body {
     display: none;
 }
 
-header {
-    text-align: center;
-}
-
 .mobile_logo img {
     max-width: 30%;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-}
-
-nav ul li {
-    padding: 10px 14px;
-    text-align: center;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-family: var(--primary-font);
-    font-size: 15px;
-    font-weight: 600;
-    letter-spacing: 1px;
 }
 
 
@@ -116,11 +91,6 @@ button {
 @media only screen and (min-width: 920px) {
     /* LOGO AND NAVIGATION AKA HEADER */
 
-    header {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-end;
-    }
 
     .background_shape svg {
         position: absolute;
@@ -128,26 +98,9 @@ button {
         left: 0;
         max-width: 100%;
         height: auto;
-        max-height: 70%;
+        width: 700px;
         z-index: 1;
         display: block;
-    }
-
-
-    .line {
-        position: relative;
-    }
-
-    .line::before {
-        border-bottom: white 3.5px solid;
-        z-index: 3;
-        display: block;
-        position: absolute;
-        content: '';
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
     }
 
     .logo,
@@ -169,11 +122,6 @@ button {
 
     .name img {
         max-height: 80px;
-    }
-
-    nav {
-        padding: 20px;
-        z-index: 5;
     }
 
 
