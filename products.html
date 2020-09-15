@@ -29,7 +29,7 @@
             </ul>
         </nav>
     </header>
-    <h2>Best sellers</h2>
+    <h1>Best sellers</h1>
     <div class="best_sellers">
 
 
@@ -49,39 +49,61 @@
             <button class="btn">Read more</button>
         </div>
     </div>
-    <div class="filters">
-        <details>
-            <summary>Sort by</summary>
-        </details>
-        <details>
-            <summary>Material</summary>
-        </details>
-        <details>
-            <summary>Components</summary>
-        </details>
+    <div class="filtration">
+        <div class="categories">
+            <h2>Categories</h2>
+            <ul>
+                <li>Medical Care</li>
+                <li>Personal Use</li>
+                <li>Professional Use</li>
+            </ul>
+        </div>
+        <div class="filters">
+            <details>
+                <summary>Sort by</summary>
+                <button>Price: lowest first</button>
+                <button>Price: highest first</button>
+            </details>
+            <details>
+                <summary>Material</summary>
+                <button>steel</button>
+                <button>aluminium</button>
+                <button>plastic</button>
+            </details>
+            <details>
+                <summary>Components</summary>
+                <button>Rigid-PCB</button>
+                <button>Flexible-PCB</button>
+                <button>Flex-PCB</button>
+                <button>High-frequency-PCB</button>
+                <button>Aluminium-PCB</button>
+            </details>
+        </div>
     </div>
-    <div class="categories">
-               <h2>Categories</h2>
-               <ul>
-                   <li>Medical Care</li>
-                   <li>Personal Use</li>
-                   <li>Professional Use</li>
-               </ul>
-           </div>
     <main>
         <template>
             <div class="product">
                 <h2>Product's title</h2>
                 <img src="images/brain illustration.png" width="150px" height="250px">
                 <h3>Price:<br><span>{Price}</span>DKK</h3>
-                <button>Read more</button>
+                <button id="modal-btn">Read more</button>
             </div>
 
         </template>
     </main>
 
-    <div class="modal">
-
+    <div class="modal-background hide">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div class="soldOut-modal">
+                <p>Sold out</p>
+            </div>
+            <div class="modal-product">Product's name</div>
+            <img src="" alt="" class="modal-image">
+            <div class="modal-description"></div>
+            <div class="modal-price">Price</div>
+            <div class="modal-discount">Discount</div>
+        </div>
     </div>
 
     <footer>
