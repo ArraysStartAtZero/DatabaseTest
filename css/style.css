@@ -29,17 +29,40 @@ h1 {
     font-family: var(--third-font);
     font-weight: 600;
     color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 40px;
+    padding: 20px;
+}
+
+h2 {
+    font-family: var(--third-font);
+    font-weight: 400;
+    font-size: 22px;
+    color: white;
     text-align: left;
     text-transform: uppercase;
-    padding: 20px;
+    padding: 12px;
+
+}
+
+h3 {
+     font-family: var(--third-font);
+    font-weight: 400;
+    color: white;
+    text-align: right;
+    text-transform: uppercase;
+    padding: 10px;
+    font-size: 30px;
 }
 
 p {
     font-family: var(--third-font);
-    font-size: 25px;
-    font-weight: 300;
+    font-size: 15px;
+    font-weight: 100;
     color: white;
     padding: 10px;
+    word-spacing: 7px;
 
 }
 
@@ -49,15 +72,22 @@ p {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 1rem;
+    width: 100%;
+    padding: 40px;
+
+}
+
+.mbi {
+    text-align: center;
 }
 
 .moretext {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
-    padding: 10px;
+    padding: 40px;
     margin: auto;
-    text-align: center;
+    text-align: left;
 }
 
 .p2 {
@@ -68,22 +98,26 @@ p {
     display: flex;
     flex: 50%;
     justify-content: center;
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 100%;
     right: 10px;
     padding: 1rem;
 }
 
 button {
     height: 40px;
-    width:25%;
+    width: 195px;
     background: white;
     border: 2px white solid;
     color: black;
     font-family: var(--primary-font);
     font-weight: 500;
-    font-size: 20px;
+    font-size: 15px;
     margin: 12px;
+}
+
+.list {
+    padding-top: 30px;
 }
 
 /* MEDIA QUERIES */
