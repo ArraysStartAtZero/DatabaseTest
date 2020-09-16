@@ -26,6 +26,26 @@ img {
     --text-color: #fff;
 }
 
+.active {
+    color: #0FA8AD;
+}
+
+.fa-youtube:hover {
+    color: brown;
+}
+
+.fa-instagram:hover {
+    color: #8a3ab9;
+}
+
+.fa-twitter:hover {
+    color: #00ACEE;
+}
+
+.fa-facebook-f:hover {
+    color: #3b5998;
+}
+
 /* HEADER */
 
 header {
@@ -49,7 +69,7 @@ nav ul {
 }
 
 nav ul li {
-    padding: 10px 14px;
+    padding: 10px;
     text-align: center;
 }
 
