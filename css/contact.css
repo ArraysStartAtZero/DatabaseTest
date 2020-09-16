@@ -1,0 +1,12 @@
+body {
+    background: rgb(2, 21, 28);
+    background: linear-gradient(180deg, rgba(2, 21, 28, 1) 0%, rgba(85, 98, 103, 1) 50%, rgba(2, 21, 28, 1) 100%);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: auto;
+    width: 100%;
+}
+
+.name img {
+    max-height: 80px;
+}
