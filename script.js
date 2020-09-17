@@ -22,7 +22,7 @@ function showData(singleRowData) {
     const template = document.querySelector('template').content;
     const clone = template.cloneNode(true);
     const h2 = clone.querySelector('h2');
-    h2.textContent = singleRowData.gsx$pcb.$t;
+    h2.textContent = singleRowData.gsx$product.$t;
 
     const h4_span = clone.querySelector('.product span');
     h4_span.textContent = singleRowData.gsx$price.$t;
