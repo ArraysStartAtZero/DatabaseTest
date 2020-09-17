@@ -28,9 +28,45 @@ function showData(singleRowData) {
     h4_span.textContent = singleRowData.gsx$price.$t;
 
     document.querySelector('main').appendChild(clone);
+    
+        if (data.gold) {
+        console.log("golden");
+
+        }
+        else{
+        console.log("not Golden");
+        }
+      
+    }
+
+    /* Ture/false method
+    
+    if (myData.gold == 'TRUE') {
+        console.log("golden");
+    } else{
+        console.log("not golden");
+    }   
+*/
+
+
+  /* Forloop method test with p.textcontent  
+    let divs = document.getElementsByClassName('product');
+
+    for (let x = 0; x < divs.length; x++) {
+        let div = divs[x];
+        let content = div.innerHTML.trim();
+      
+        if (p.textContent == 'Gold' || content == 'Silver') {
+          div.style.display = 'none';
+      }
+    }
+  */  
 }
 
 
 /* how's the images going? by the way, singleRowData cannot work outside of the function right above this but also seems to break stuff when in it lol */
 const imglink = singleRowData.gsx$images.$t
 imglink = "<img src=" + singleRowData.gsx$images + ">";
+
+
+
