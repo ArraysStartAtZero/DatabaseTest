@@ -31,6 +31,7 @@ function showData(singleRowData) {
     h4_span.textContent = singleRowData.gsx$price.$t;
 
     document.querySelector('main').appendChild(clone);
+     }
     
         if (data.gold) {
         console.log("golden");
@@ -40,7 +41,7 @@ function showData(singleRowData) {
         console.log("not Golden");
         }
       
-    }
+   
 
     /* Ture/false method
     
