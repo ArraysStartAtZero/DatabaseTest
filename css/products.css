@@ -9,11 +9,14 @@ body {
     margin: 0;
     color: white;
 }
-
 main {
+    width: 80%;
+    margin: auto;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 2rem;
+    grid-gap: 4rem;
     /*    margin: 1rem 5rem;*/
 }
 
@@ -30,7 +33,7 @@ h1 {
 }
 
 .best_sellers {
-    display: grid;
+    display: flex;
     justify-content: center;
     margin-bottom: 2%;
 }
@@ -59,6 +62,9 @@ h1 {
 .container .btn:hover {
     background-color: darkcyan;
 }
+.container .btn:active {
+    background-color: red;
+}
 
 .product {
     border-radius: 10px;
@@ -67,7 +73,7 @@ h1 {
     display: flex;
     flex-flow: column;
     padding: 1rem 2rem;
-    margin: 2rem auto;
+    margin: 0rem auto;
     width: 17rem;
 }
 
@@ -91,46 +97,43 @@ h1 {
 
 /* CATEGORIES */
 
-.categories ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-}
-
-.categories ul li:first-child {
-    margin-left: 0;
-}
-
-.categories ul li {
-    margin: 4px 8px;
-}
-
-.categories ul {
-    list-style: none;
-    padding: 0;
-}
 
 /* FILTERS */
 
 .filters {
-    display: inline-flex;
+    display: flex;
+    margin: 2.5rem 0rem 1rem;
+    justify-content: flex-start;
+    margin-left: 4rem;
+
+}
+details {
+    margin-right: 4rem;
+}
+summary {
+    position: relative;
+    font-family: syne, sans-serif;
+}
+.filters .button {
+    position: absolute;
 }
 
-.filters summary {
-    margin: 0 10px;
-}
+
 
 .filtration {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 10px;
-    align-items: flex-end;
-    margin: 0 5rem;
+    border-bottom: 3px solid white;
 }
 
 .filters button {
     display: block;
     width: 140px;
+    background-color: #1d2833;
+    border-radius: 7%;
+    color: white;
+    font-family: syne,sans-serif;
+}
+.filters button:hover {
+    background-color: darkcyan;
 }
 
 /* MODAL'S STYLING */
@@ -208,14 +211,16 @@ h1 {
     padding: 10px 16px;
     color: white;
     border-radius: 4px;
-    text-transform: lowercase;
+    text-transform: uppercase;
     margin: auto;
     width: 140px;
     margin-top: 5px;
+    font-family: syne, sans-serif;
 }
 
 #modal-btn:hover {
     background: lightskyblue;
+    color: black;
 }
 
 /* media queries */
@@ -230,16 +235,10 @@ h1 {
 
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (max-width: 600px) {
     main {
-        border-top: 3px solid white;
-        border-left: 3px solid white;
-        margin: 1rem 5rem;
-    }
-
-
-    .product {
-        margin: 2rem 5rem;
+        border-top: none;
+        margin: 0rem auto;
     }
 
     .best_sellers {
@@ -247,5 +246,40 @@ h1 {
         justify-content: center;
         margin-bottom: 2%;
     }
+    .best_sellers {
+        margin-bottom: 2.5rem;
+    }
+    h1 {
+        margin-top: 2.5rem;
+        margin-bottom: 1.5rem;
+    }
+    .categories {
+        display: none;
+    }
+    .filtration {
+        margin-top: 4rem;
+    }
+    .filters {
+        display: flex;
+        justify-content: space-evenly;
+        margin-left: 0;
+    }
+    .container .btn {
+        display: block;
+    position: absolute;
+    bottom: -2.4rem;
+    right: -.3rem;
+    background-color: #1d2833;
+    border: 1px solid #45a29e;
+    font-family: 'syne', sans-serif;
+    color: aliceblue;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.container .btn:hover {
+    background-color: darkcyan;
+}
+
 
 }
