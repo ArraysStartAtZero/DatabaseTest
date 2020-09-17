@@ -16,6 +16,7 @@ body {
     margin: 8px 15px;
 }
 
+
 .summary a {
     color: lightskyblue;
 }
@@ -49,9 +50,6 @@ body {
 }
 
 @media only screen and (min-width: 500px) {
-    .grid img {
-        max-width: 400px;
-    }
 
     .illustration {
         text-align: center;
@@ -66,6 +64,7 @@ body {
         justify-content: center;
         align-items: center;
     }
+
 
     .inner {
         display: flex;
@@ -89,4 +88,9 @@ body {
         justify-content: center;
         align-items: center;
     }
+
+    .illustration img {
+        width: 500px;
+    }
+
 }
