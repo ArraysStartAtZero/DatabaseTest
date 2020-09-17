@@ -39,7 +39,7 @@ function showData(singleRowData) {
         else{
         console.log("not Golden");
         }
-      
+}   
     
 
     /* Ture/false method
