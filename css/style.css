@@ -33,11 +33,12 @@ h1 {
     text-align: center;
     font-size: 40px;
     padding: 20px;
+    margin-top: 2rem;
 }
 
 h2 {
     font-family: var(--third-font);
-    font-weight: 400;
+    font-weight: 900;
     font-size: 22px;
     color: white;
     text-align: left;
@@ -53,7 +54,7 @@ h3 {
     text-align: right;
     text-transform: uppercase;
     padding: 10px 0;
-    font-size: 30px;
+    font-size: 28px;
 }
 
 p {
@@ -93,6 +94,9 @@ p {
 .box {
     flex: 50%;
     padding: 0 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .button-inner {
