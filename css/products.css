@@ -49,7 +49,7 @@ h1 {
 
 .container {
     position: relative;
-    margin: auto;
+    margin: 0 2rem;
     padding: 0;
 }
 
@@ -312,5 +312,20 @@ summary:hover {
         justify-content: space-evenly;
         margin-left: 0;
     }
+    .container img {
+        margin-bottom: 1.5rem;
+    }
+    .container .btn {
+    position: absolute;
+    bottom: 15%;
+    right: 0;
+    left: 0;
+    background-color: #1d2833;
+    border: 1px solid #45a29e;
+    font-family: 'syne', sans-serif;
+    color: aliceblue;
+    border-radius: 5px;
+    margin: auto;
+}
 
 }
