@@ -47,12 +47,12 @@ h2 {
 }
 
 h3 {
-     font-family: var(--third-font);
+    font-family: var(--third-font);
     font-weight: 400;
     color: white;
     text-align: right;
     text-transform: uppercase;
-    padding: 10px;
+    padding: 10px 0;
     font-size: 30px;
 }
 
@@ -90,16 +90,32 @@ p {
     text-align: left;
 }
 
-.p2 {
+.box {
     flex: 50%;
+    padding: 0 60px;
+}
+
+.button-inner {
+    color: white;
+    background: #237FAD;
+    width: 200px;
+    border: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+.button {
+    text-align: center;
 }
 
 .phone_app {
     display: flex;
     flex: 50%;
     justify-content: center;
+    align-items: center;
     width: auto;
-    height: 100%;
     right: 10px;
     padding: 1rem;
 }
@@ -116,11 +132,20 @@ button {
     margin: 12px;
 }
 
-.list {
-    padding-top: 30px;
-}
 
 /* MEDIA QUERIES */
+
+@media only screen and (max-width: 1111px) {
+    .moretext {
+        flex-direction: column-reverse;
+    }
+}
+
+@media only screen and (max-width: 677px) {
+    .box {
+        padding: 0;
+    }
+}
 
 @media only screen and (min-width: 920px) {
     /* LOGO AND NAVIGATION AKA HEADER */

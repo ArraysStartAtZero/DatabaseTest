@@ -1,6 +1,6 @@
 body {
     background: rgb(2, 21, 28);
-    background: linear-gradient(180deg, #202020 0%, rgba(25, 98, 103, 1) 50%, #202020 100%);
+    background: linear-gradient(180deg, rgba(2, 21, 28, 1) 0%, rgba(85, 98, 103, 1) 100%, rgba(2, 21, 28, 1) 0%);
     background-repeat: no-repeat;
     background-size: contain;
     height: auto;
