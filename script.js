@@ -23,6 +23,9 @@ function showData(singleRowData) {
     const clone = template.cloneNode(true);
     const h2 = clone.querySelector('h2');
     h2.textContent = singleRowData.gsx$product.$t;
+    
+    var b = clone.querySelector("img")
+    b.setAttribute("src", singleRowData.gsx$images.$t)
 
     const h4_span = clone.querySelector('.product span');
     h4_span.textContent = singleRowData.gsx$price.$t;
