@@ -22,7 +22,10 @@ function showData(singleRowData) {
     const template = document.querySelector('template').content;
     const clone = template.cloneNode(true);
     const h2 = clone.querySelector('h2');
-    h2.textContent = singleRowData.gsx$pcb.$t;
+    h2.textContent = singleRowData.gsx$product.$t;
+    
+     var b = clone.querySelector("img")
+    b.setAttribute("src", singleRowData.gsx$images.$t)
 
     const h4_span = clone.querySelector('h3 span');
     h4_span.textContent = singleRowData.gsx$price.$t;
@@ -61,12 +64,8 @@ function showData(singleRowData) {
       }
     }
   */  
-}
 
 
-/* how's the images going? by the way, singleRowData cannot work outside of the function right above this but also seems to break stuff when in it lol */
-const imglink = singleRowData.gsx$images.$t
-imglink = "<img src=" + singleRowData.gsx$images + ">";
 
 
 
