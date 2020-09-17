@@ -40,7 +40,7 @@ function showData(singleRowData) {
         console.log("not Golden");
         }
       
-    }
+    
 
     /* Ture/false method
     
@@ -64,12 +64,6 @@ function showData(singleRowData) {
       }
     }
   */  
-}
-
-
-/* how's the images going? by the way, singleRowData cannot work outside of the function right above this but also seems to break stuff when in it lol */
-const imglink = singleRowData.gsx$images.$t
-imglink = "<img src=" + singleRowData.gsx$images + ">";
 
 
 
